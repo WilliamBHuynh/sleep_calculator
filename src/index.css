@@ -1,0 +1,13 @@
+body {
+    padding: 50px;
+    /* background-image: url("night_sky_background.jpg"); */
+}
+
+h1 {
+    color:black;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
