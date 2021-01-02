@@ -42,8 +42,8 @@ class App extends React.Component<{}, { isSubmitted: boolean }> {
 
     return (
       <div>
-        <div>
-          <img src='moon.gif' alt='Gif of a cartoon drawn moon' />
+        <div className='center'>
+          <img src='https://www.clipartbay.com/cliparts/crescent-moon-clipart-free-v7vkxfs.png' alt='Crescent moon' />
         </div>
         <div>
           <h1 className="title">Sleep Calculator</h1>

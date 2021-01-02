@@ -1,12 +1,16 @@
-body {
-    padding: 100px;
-    /* background-image: url("felix-mittermeier-Knwea-mLGAg-unsplash.jpg"); */
-    background-color: black;
-}
-
 label {
     color: white;
     margin-bottom: 30px;
+}
+
+img {
+    width: 30%;
+}
+ 
+.center {
+    display: block;
+    margin-left: 34%;
+    padding: 25px;
 }
 
 .title {
@@ -51,6 +55,7 @@ label {
     justify-content: center;
     background-color: #003B71;
     display:flex;
-    padding-top: 15%;
+    padding: 20px;
     height: 100%;
+    background-image: url('images/starsBackground.png');
 }
