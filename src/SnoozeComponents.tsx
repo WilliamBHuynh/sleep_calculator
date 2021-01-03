@@ -5,12 +5,14 @@ import './index.css'
 
 export const SnoozeComponents = (props: any) => {
 
+    // returns if the timeValue is earlier than the endLimit and later than the lastValue
     const isEarlierThanEndLimit = (timeValue: string, endLimit: string, lastValue: string) => {
         const timeValueIsEarlier = moment(timeValue, 'h:mmA').diff(moment(endLimit, 'h:mmA')) < 0;
         const timeValueIsLaterThanLastValue = lastValue === "" ? true : moment(lastValue, 'h:mmA').diff(moment(timeValue, 'h:mmA')) < 0;
         return timeValueIsEarlier && timeValueIsLaterThanLastValue;
     }
 
+    // defining the time attributes
     let timeValue = "12:00AM";
     let lastValue = "";
     const endLimit = "11:59PM";
@@ -19,6 +21,7 @@ export const SnoozeComponents = (props: any) => {
     const snoozeTimeOptions = [{ key: timeValue, text: timeValue, value: timeValue }];
     snoozeTimeOptions.push({ key: timeValue, text: timeValue, value: timeValue });
 
+    // populate the times from the timeValue to the endLimit
     while (isEarlierThanEndLimit(timeValue, endLimit, lastValue)) {
         lastValue = timeValue;
         timeValue = moment(timeValue, 'h:mmA').add(step, 'minutes').format('h:mmA');
@@ -26,6 +29,7 @@ export const SnoozeComponents = (props: any) => {
     }
     snoozeTimeOptions.pop();
 
+    // hook for selected snooze time from dropdown
     const [selectedSnoozeTime, setSelectedSnoozeTime] = useState(snoozeTimeOptions[17]);
 
     const handleSnoozeTimeChange = (event: SyntheticEvent<HTMLElement>, data: any) => {
@@ -36,6 +40,7 @@ export const SnoozeComponents = (props: any) => {
         });
     }
 
+    // values for snooze type dropdown
     const snoozeTypeOptions = [
         {
             key: "I need to wake up by...",
@@ -49,6 +54,7 @@ export const SnoozeComponents = (props: any) => {
         }
     ];
 
+    // hook for snooze time dropdown
     const [selectedSnoozeType, setSelectedSnoozeType] = useState(snoozeTypeOptions[0]);
 
     const handleSnoozeTypeChange = (event: SyntheticEvent<HTMLElement>, data: any) => {
@@ -59,6 +65,7 @@ export const SnoozeComponents = (props: any) => {
         });
     }
 
+    // description text for input screen
     const SnoozeInputText: React.FC = () => {
         return (
             <label>
@@ -71,6 +78,7 @@ export const SnoozeComponents = (props: any) => {
         );
     }
 
+    // drop down components for input screen
     const SnoozeInputComponents: React.FC = () => {
         return (
             <div>
@@ -97,6 +105,7 @@ export const SnoozeComponents = (props: any) => {
         );
     }
 
+    // description text for output screen depending on snooze type
     const SnoozeOutputText: React.FC = () => {
         if (selectedSnoozeType.value.includes('wake')) {
             return (
@@ -116,6 +125,7 @@ export const SnoozeComponents = (props: any) => {
         );
     }
 
+    // grid component for snooze time output
     const SnoozeOutputComponents: React.FC = () => {
         // Calculate snooze times based on inputted time
         const snoozeTimes = [];
