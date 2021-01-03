@@ -19,7 +19,6 @@ export const SnoozeComponents = (props: any) => {
     const step = 30;
 
     const snoozeTimeOptions = [{ key: timeValue, text: timeValue, value: timeValue }];
-    snoozeTimeOptions.push({ key: timeValue, text: timeValue, value: timeValue });
 
     // populate the times from the timeValue to the endLimit
     while (isEarlierThanEndLimit(timeValue, endLimit, lastValue)) {
@@ -146,7 +145,7 @@ export const SnoozeComponents = (props: any) => {
         return (
             <div>
                 <div className='textPadding'><SnoozeOutputText /></div>
-                <div className='grid'>
+                <div className='ui one column stackable center aligned page grid'>
                     <Grid columns={3}>
                         <Grid.Row>
                             <Grid.Column>
