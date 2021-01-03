@@ -21,11 +21,17 @@ img {
 }
 
 .textPadding {
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    text-align: center;
 }
 
 .padding {
     padding: 10px;
+}
+
+.gridPadding {
+    margin-bottom: 21px;
 }
 
 .button {
@@ -50,9 +56,15 @@ img {
 
 #container {
     justify-content: center;
-    background-color: #003B71;
     display:flex;
     padding: 20px;
     height: 100%;
-    background-image: url('images/starsBackground.png');
+}
+
+@media (max-width:768px){
+    #container{background-image: url('images/sleepCalculatorMobileBackgrond.png');}
+}
+
+@media (min-width:769px){
+    #container{background-image: url('images/starsBackground.png');}
 }

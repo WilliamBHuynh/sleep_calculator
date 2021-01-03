@@ -145,32 +145,34 @@ export const SnoozeComponents = (props: any) => {
         return (
             <div>
                 <div className='textPadding'><SnoozeOutputText /></div>
-                <div className='ui one column stackable center aligned page grid'>
-                    <Grid columns={3}>
-                        <Grid.Row>
-                            <Grid.Column>
-                                <label className='highlight'>{snoozeTimes[5]}</label>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <label className='highlight'>{snoozeTimes[4]}</label>
-                            </Grid.Column>
-                            <Grid.Column>
-                                {snoozeTimes[3]}
-                            </Grid.Column>
-                        </Grid.Row>
+                <div className='gridPadding'>
+                    <div className='ui one column stackable center aligned page grid'>
+                        <Grid columns={3}>
+                            <Grid.Row>
+                                <Grid.Column>
+                                    <label className='highlight'>{snoozeTimes[5]}</label>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <label className='highlight'>{snoozeTimes[4]}</label>
+                                </Grid.Column>
+                                <Grid.Column>
+                                    {snoozeTimes[3]}
+                                </Grid.Column>
+                            </Grid.Row>
 
-                        <Grid.Row>
-                            <Grid.Column>
-                                {snoozeTimes[2]}
-                            </Grid.Column>
-                            <Grid.Column>
-                                {snoozeTimes[1]}
-                            </Grid.Column>
-                            <Grid.Column>
-                                {snoozeTimes[0]}
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
+                            <Grid.Row>
+                                <Grid.Column>
+                                    {snoozeTimes[2]}
+                                </Grid.Column>
+                                <Grid.Column>
+                                    {snoozeTimes[1]}
+                                </Grid.Column>
+                                <Grid.Column>
+                                    {snoozeTimes[0]}
+                                </Grid.Column>
+                            </Grid.Row>
+                        </Grid>
+                    </div>
                 </div>
             </div>
         );

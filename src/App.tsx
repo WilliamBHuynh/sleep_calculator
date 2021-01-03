@@ -14,7 +14,7 @@ const SubmitButton = (props: any) => {
 const RestartButton = (props: any) => {
   return (
     <Button color='yellow' onClick={props.onClick}>
-      Calculate Again
+      Calculate Snooze Times
     </Button>
   );
 }
