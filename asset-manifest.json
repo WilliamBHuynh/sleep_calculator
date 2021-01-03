@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sleep_calculator/static/css/main.639633a0.chunk.css",
+    "main.js": "/sleep_calculator/static/js/main.3c47cb93.chunk.js",
+    "main.js.map": "/sleep_calculator/static/js/main.3c47cb93.chunk.js.map",
+    "runtime-main.js": "/sleep_calculator/static/js/runtime-main.c45bf5f5.js",
+    "runtime-main.js.map": "/sleep_calculator/static/js/runtime-main.c45bf5f5.js.map",
+    "static/css/2.7d51aa04.chunk.css": "/sleep_calculator/static/css/2.7d51aa04.chunk.css",
+    "static/js/2.667db8dc.chunk.js": "/sleep_calculator/static/js/2.667db8dc.chunk.js",
+    "static/js/2.667db8dc.chunk.js.map": "/sleep_calculator/static/js/2.667db8dc.chunk.js.map",
+    "index.html": "/sleep_calculator/index.html",
+    "static/css/2.7d51aa04.chunk.css.map": "/sleep_calculator/static/css/2.7d51aa04.chunk.css.map",
+    "static/css/main.639633a0.chunk.css.map": "/sleep_calculator/static/css/main.639633a0.chunk.css.map",
+    "static/js/2.667db8dc.chunk.js.LICENSE.txt": "/sleep_calculator/static/js/2.667db8dc.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/sleep_calculator/static/media/outline-icons.ddae9b1b.woff",
+    "static/media/index.css": "/sleep_calculator/static/media/starsBackground.2800fdc9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c45bf5f5.js",
+    "static/css/2.7d51aa04.chunk.css",
+    "static/js/2.667db8dc.chunk.js",
+    "static/css/main.639633a0.chunk.css",
+    "static/js/main.3c47cb93.chunk.js"
+  ]
+}
